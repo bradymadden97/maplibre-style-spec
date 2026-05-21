@@ -1,5 +1,6 @@
 ## main
 ### ✨ Features and improvements
+- Allow `line-color` when `line-pattern` is set, for SDF line pattern colorization
 - Add `fill-pattern-color` paint property for SDF fill patterns ([#1641](https://github.com/maplibre/maplibre-style-spec/pull/1641))
 
 ### 🐞 Bug fixes

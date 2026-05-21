@@ -1,0 +1,34 @@
+{
+  "version": 8,
+  "sources": {
+    "geojson": {"type": "geojson", "data": {"type": "FeatureCollection", "features": []}}
+  },
+  "layers": [
+    {
+      "id": "valid-line-color-with-pattern",
+      "type": "line",
+      "source": "geojson",
+      "paint": {
+        "line-pattern": "my-pattern",
+        "line-color": "#ff0000"
+      }
+    },
+    {
+      "id": "valid-data-driven-color-with-pattern",
+      "type": "line",
+      "source": "geojson",
+      "paint": {
+        "line-pattern": "my-pattern",
+        "line-color": ["get", "line_color"]
+      }
+    },
+    {
+      "id": "valid-pattern-without-color",
+      "type": "line",
+      "source": "geojson",
+      "paint": {
+        "line-pattern": "my-pattern"
+      }
+    }
+  ]
+}

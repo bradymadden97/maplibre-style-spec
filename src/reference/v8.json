@@ -6478,14 +6478,9 @@
     },
     "line-color": {
       "type": "color",
-      "doc": "The color with which the line will be drawn.",
+      "doc": "The color with which the line will be drawn. When used with an SDF line pattern, this controls the color of the pattern shape.",
       "default": "#000000",
       "transition": true,
-      "requires": [
-        {
-          "!": "line-pattern"
-        }
-      ],
       "sdk-support": {
         "basic functionality": {
           "js": "0.10.0",
